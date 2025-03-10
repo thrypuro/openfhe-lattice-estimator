@@ -48,7 +48,7 @@ usint logQ   = 0;
 usint B_g    = 0;
 usint B_ks   = 0;
 usint B_rk   = 32;
-usint sigma  = 3.19;
+double sigma  = 3.19;
 usint bootstrapping_technique = 0;
 usint secret_dist = 0;
 
@@ -126,7 +126,7 @@ int main(int argc, char* argv[]) {
             case 'h':
                 usage();
             default:
-                return false;
+                return 1;
         }
     }
 
